@@ -1,4 +1,4 @@
-# 💕 Una Cita Especial
+# 💭 Te quiero preguntar algo...
 
 Una aplicación web romántica para pedirle a alguien que salga contigo. Construida con Next.js 16, TypeScript, Tailwind CSS y Supabase.
 
