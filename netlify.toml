@@ -7,8 +7,8 @@
   command = "npm run build"
 
 [build.environment]
-  # Node.js version for builds
-  NODE_VERSION = "18"
+  # Node.js version for builds (Next.js 16 requires >=20.9.0)
+  NODE_VERSION = "20"
 
 [[redirects]]
   # Next.js pages and API routes
