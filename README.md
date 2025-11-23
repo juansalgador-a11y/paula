@@ -113,7 +113,14 @@ Tres canciones embebidas de Spotify en la página final.
 
 ## 🚀 Despliegue
 
-### Vercel (Recomendado)
+### Netlify (Recomendado)
+
+1. Conecta tu repositorio de GitHub a Netlify
+2. Las dependencias ya están configuradas correctamente (React 18 para compatibilidad)
+3. Agrega las variables de entorno de Supabase en Build Settings
+4. Despliega automáticamente
+
+### Vercel (Alternativa)
 
 1. Conecta tu repositorio de GitHub a Vercel
 2. Agrega las variables de entorno de Supabase
