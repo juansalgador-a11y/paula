@@ -173,14 +173,14 @@ function TimeChoice() {
             className: "max-w-md w-full bg-white/95 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/30 p-12 space-y-10 relative overflow-hidden",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "absolute top-0 left-0 w-28 h-28 bg-gradient-to-br from-blue-200/20 to-indigo-200/20 rounded-full -translate-y-14 -translate-x-14 blur-3xl"
+                    className: "absolute top-0 left-0 w-28 h-28 bg-gradient-to-br from-gray-200/20 to-slate-200/20 rounded-full -translate-y-14 -translate-x-14 blur-3xl"
                 }, void 0, false, {
                     fileName: "[project]/app/time-choice/page.tsx",
                     lineNumber: 64,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-indigo-200/20 to-purple-200/20 rounded-full translate-y-16 translate-x-16 blur-2xl"
+                    className: "absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-slate-200/20 to-gray-200/20 rounded-full translate-y-16 translate-x-16 blur-2xl"
                 }, void 0, false, {
                     fileName: "[project]/app/time-choice/page.tsx",
                     lineNumber: 65,
@@ -204,25 +204,15 @@ function TimeChoice() {
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "text-center space-y-4 relative z-10",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                            className: "text-4xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent",
-                            children: "¿A qué hora te viene mejor? 🕐"
-                        }, void 0, false, {
-                            fileName: "[project]/app/time-choice/page.tsx",
-                            lineNumber: 77,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-lg text-gray-700 font-medium bg-gradient-to-r from-blue-50/50 to-indigo-50/50 backdrop-blur-sm rounded-full px-6 py-3 border border-white/40",
-                            children: "Elige el horario perfecto para nuestra cita"
-                        }, void 0, false, {
-                            fileName: "[project]/app/time-choice/page.tsx",
-                            lineNumber: 80,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "text-4xl font-bold text-gray-900",
+                        children: "¿A qué hora te viene mejor? 🕐"
+                    }, void 0, false, {
+                        fileName: "[project]/app/time-choice/page.tsx",
+                        lineNumber: 77,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/app/time-choice/page.tsx",
                     lineNumber: 76,
                     columnNumber: 9
@@ -231,7 +221,7 @@ function TimeChoice() {
                     className: "grid grid-cols-2 gap-3",
                     children: timeOptions.map((time)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                             onClick: ()=>handleTimeSelect(time),
-                            className: `group relative p-6 rounded-3xl border-2 transition-all duration-500 transform hover:scale-110 overflow-hidden ${selectedTime === time ? 'border-blue-500 bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-100 shadow-2xl ring-4 ring-blue-200/50' : 'border-gray-200/60 hover:border-blue-400 hover:bg-gradient-to-br hover:from-blue-25 hover:to-indigo-25 hover:shadow-xl bg-white/70 backdrop-blur-sm'}`,
+                            className: `p-4 rounded-2xl border-2 transition-all duration-300 transform hover:scale-105 ${selectedTime === time ? 'border-blue-500 bg-blue-50 shadow-lg' : 'border-gray-200 hover:border-gray-300 hover:bg-gray-50 bg-white/70 backdrop-blur-sm'}`,
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "text-center",
                                 children: [
@@ -240,7 +230,7 @@ function TimeChoice() {
                                         children: time
                                     }, void 0, false, {
                                         fileName: "[project]/app/time-choice/page.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 96,
                                         columnNumber: 17
                                     }, this),
                                     selectedTime === time && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -252,69 +242,43 @@ function TimeChoice() {
                                                 children: "✓"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/time-choice/page.tsx",
-                                                lineNumber: 106,
+                                                lineNumber: 104,
                                                 columnNumber: 23
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/time-choice/page.tsx",
-                                            lineNumber: 105,
+                                            lineNumber: 103,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/app/time-choice/page.tsx",
-                                        lineNumber: 104,
+                                        lineNumber: 102,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/time-choice/page.tsx",
-                                lineNumber: 97,
+                                lineNumber: 95,
                                 columnNumber: 15
                             }, this)
                         }, time, false, {
                             fileName: "[project]/app/time-choice/page.tsx",
-                            lineNumber: 88,
+                            lineNumber: 86,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/time-choice/page.tsx",
-                    lineNumber: 86,
+                    lineNumber: 84,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                     onClick: handleContinue,
                     disabled: !selectedTime,
-                    className: "relative w-full bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-600 text-white py-5 px-10 rounded-3xl font-bold text-xl hover:from-blue-600 hover:via-indigo-600 hover:to-purple-700 transform hover:scale-[1.02] active:scale-[0.99] transition-all duration-500 shadow-2xl hover:shadow-3xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-2xl overflow-hidden group",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "relative z-10 flex items-center justify-center gap-3",
-                            children: [
-                                "Continuar",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-2xl group-hover:rotate-12 transition-transform duration-300",
-                                    children: "⏰"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/time-choice/page.tsx",
-                                    lineNumber: 123,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/time-choice/page.tsx",
-                            lineNumber: 121,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"
-                        }, void 0, false, {
-                            fileName: "[project]/app/time-choice/page.tsx",
-                            lineNumber: 125,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
+                    className: "w-full bg-white text-gray-800 py-3 px-6 rounded-2xl font-semibold text-lg border-2 border-gray-200 hover:border-blue-400 hover:bg-blue-50 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-lg",
+                    children: "Continuar ⏰"
+                }, void 0, false, {
                     fileName: "[project]/app/time-choice/page.tsx",
-                    lineNumber: 116,
+                    lineNumber: 114,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -323,31 +287,31 @@ function TimeChoice() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PhotoDisplay$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: "/cita.jpg",
                             alt: "Foto de cita",
-                            className: "w-20 h-20 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-white/50",
-                            width: 80,
-                            height: 80,
+                            className: "w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200",
+                            width: 64,
+                            height: 64,
                             fallbackText: "Una cita perfecta"
                         }, void 0, false, {
                             fileName: "[project]/app/time-choice/page.tsx",
-                            lineNumber: 130,
+                            lineNumber: 124,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$PhotoDisplay$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                             src: "/especial.jpg",
                             alt: "Foto especial",
-                            className: "w-20 h-20 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-white/50",
-                            width: 80,
-                            height: 80,
+                            className: "w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200",
+                            width: 64,
+                            height: 64,
                             fallbackText: "Momento especial"
                         }, void 0, false, {
                             fileName: "[project]/app/time-choice/page.tsx",
-                            lineNumber: 138,
+                            lineNumber: 132,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/time-choice/page.tsx",
-                    lineNumber: 129,
+                    lineNumber: 123,
                     columnNumber: 9
                 }, this)
             ]
