@@ -18,7 +18,7 @@ export default function Home() {
       if (selectedDateString === requiredDate) {
         // Store the meeting date and navigate to next step
         localStorage.setItem('meetingDate', selectedDateString)
-        router.push('/date-question')
+        router.push('/memories')
       } else {
         alert('💝 Fecha incorrecta. Recuerda cuando nos conocimos... intenta de nuevo 💕')
       }
@@ -34,25 +34,17 @@ export default function Home() {
         {/* Photo Section */}
         <div className="flex justify-center">
           <PhotoDisplay
-            src="/foto-principal.jpg"
+            src="/tu-foto.jpeg"
             alt="Tu foto principal"
             fallbackText="Tu foto aquí 💕"
           />
         </div>
 
         {/* Welcome Text */}
-        <div className="text-center space-y-6 relative z-10">
+        <div className="text-center space-y-6">
           <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
             Hola princesa  💕
           </h1>
-
-          {/* Explanation */}
-          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 max-w-sm mx-auto border border-gray-200/50 shadow-sm">
-            <p className="text-sm text-gray-700 leading-relaxed font-medium">
-              Esta página es especial, solo tú puedes acceder.
-              Para continuar, necesito que me recuerdes <strong className="text-gray-900">exactamente</strong> el día que nos conocimos...
-            </p>
-          </div>
 
           {/* Hint Button */}
           <button
@@ -64,24 +56,30 @@ export default function Home() {
             <span className="text-lg">✨</span>
           </button>
 
-          <p className="text-gray-600 text-sm font-medium bg-white/50 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200/30">
-            Selecciona la fecha en el calendario
-          </p>
+          {/* Explanation */}
+          <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 max-w-sm mx-auto border border-gray-200/50 shadow-sm">
+            <p className="text-sm text-gray-700 leading-relaxed font-medium">
+              Esta página es especial, solo tú puedes acceder.
+              Para continuar, necesito que me recuerdes <strong className="text-gray-900">exactamente</strong> el día que nos conocimos...
+            </p>
+          </div>
         </div>
 
         {/* Date Picker */}
-        <div className="space-y-5">
+        <div className="space-y-8 mt-8">
           <label className="block text-lg font-semibold text-gray-800 text-center bg-gradient-to-r from-gray-800 to-gray-700 bg-clip-text text-transparent">
             ¿Cuándo nos conocimos? 📅
           </label>
-          <div className="flex justify-center">
+          <div className="flex justify-center px-4 py-6">
             <div className="relative">
             <DatePicker
               selected={selectedDate}
               onChange={(date) => setSelectedDate(date)}
               dateFormat="dd/MM/yyyy"
-              className="w-full px-6 py-4 text-lg text-center bg-white/70 backdrop-blur-md border-2 border-gray-200/50 rounded-2xl focus:ring-4 focus:ring-gray-300 focus:border-gray-400 hover:border-gray-300 transition-all duration-300 placeholder:text-gray-400 shadow-lg hover:shadow-xl"
+              className="relative z-10 w-full px-6 py-4 text-lg text-center bg-white/70 backdrop-blur-md border-2 border-gray-200/50 rounded-2xl focus:ring-4 focus:ring-gray-300 focus:border-gray-400 hover:border-gray-300 transition-all duration-300 placeholder:text-gray-400 shadow-lg hover:shadow-xl"
               placeholderText="Selecciona la fecha"
+              popperClassName="z-[10000]"
+              calendarClassName="z-[10000] rounded-2xl bg-white/95 backdrop-blur-sm border border-gray-200/50 shadow-2xl"
             />
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-white/20 to-transparent pointer-events-none"></div>
             </div>
@@ -96,30 +94,6 @@ export default function Home() {
         >
           Continuar ✨
         </button>
-
-        {/* Memory Photos */}
-        <div className="flex justify-center space-x-4 pt-8">
-          <div className="group">
-            <PhotoDisplay
-              src="/recuerdo-1.jpg"
-              alt="Foto recuerdo 1"
-              className="w-20 h-20 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-gray-300 transform hover:scale-105"
-              width={80}
-              height={80}
-              fallbackText="Recuerdo especial"
-            />
-          </div>
-          <div className="group">
-            <PhotoDisplay
-              src="/recuerdo-2.jpg"
-              alt="Foto recuerdo 2"
-              className="w-20 h-20 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200 hover:border-gray-300 transform hover:scale-105"
-              width={80}
-              height={80}
-              fallbackText="Otro recuerdo"
-            />
-          </div>
-        </div>
       </div>
     </div>
   )

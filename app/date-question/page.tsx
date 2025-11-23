@@ -89,7 +89,7 @@ export default function DateQuestion() {
         {/* Photo Section */}
         <div className="flex justify-center">
           <PhotoDisplay
-            src="/foto-principal.jpg"
+            src="/tu-foto.jpeg"
             alt="Tu foto principal"
             fallbackText="Tu foto aquí 💕"
           />
@@ -130,7 +130,7 @@ export default function DateQuestion() {
         {/* Memory Photos */}
         <div className="flex justify-center space-x-2 pt-4">
           <PhotoDisplay
-            src="/recuerdo-1.jpg"
+            src="/nosotros1.jpeg"
             alt="Foto recuerdo 1"
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
@@ -138,7 +138,7 @@ export default function DateQuestion() {
             fallbackText="Recuerdo feliz"
           />
           <PhotoDisplay
-            src="/juntos.jpg"
+            src="/nosotros2.jpeg"
             alt="Foto juntos"
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}

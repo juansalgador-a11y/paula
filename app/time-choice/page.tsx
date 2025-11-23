@@ -66,7 +66,7 @@ export default function TimeChoice() {
         {/* Photo Section */}
         <div className="flex justify-center">
           <PhotoDisplay
-            src="/foto-principal.jpg"
+            src="/tu-foto.jpeg"
             alt="Tu foto principal"
             fallbackText="Tu foto aquí 💕"
           />
@@ -122,7 +122,7 @@ export default function TimeChoice() {
         {/* Memory Photos */}
         <div className="flex justify-center space-x-2 pt-4">
           <PhotoDisplay
-            src="/cita.jpg"
+            src="/nosotros1.jpeg"
             alt="Foto de cita"
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
@@ -130,7 +130,7 @@ export default function TimeChoice() {
             fallbackText="Una cita perfecta"
           />
           <PhotoDisplay
-            src="/especial.jpg"
+            src="/nosotros2.jpeg"
             alt="Foto especial"
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}

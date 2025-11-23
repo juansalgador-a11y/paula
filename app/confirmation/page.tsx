@@ -83,7 +83,7 @@ export default function Confirmation() {
         {/* Photo Section */}
         <div className="flex justify-center">
           <PhotoDisplay
-            src="/feliz.jpg"
+            src="/tu-foto.jpeg"
             alt="Foto feliz"
             fallbackText="Tu sonrisa 💕"
           />
@@ -226,7 +226,7 @@ export default function Confirmation() {
         {/* Memory Photos */}
         <div className="flex justify-center space-x-3 pt-6">
           <PhotoDisplay
-            src="/feliz.jpg"
+            src="/tu-foto.jpeg"
             alt="Foto feliz"
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
@@ -234,7 +234,7 @@ export default function Confirmation() {
             fallbackText="Sonrisa hermosa"
           />
           <PhotoDisplay
-            src="/especial.jpg"
+            src="/nosotros1.jpeg"
             alt="Foto especial"
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
@@ -242,7 +242,7 @@ export default function Confirmation() {
             fallbackText="Momento especial"
           />
           <PhotoDisplay
-            src="/juntos.jpg"
+            src="/nosotros2.jpeg"
             alt="Foto juntos"
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
