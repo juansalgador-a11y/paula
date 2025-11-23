@@ -72,8 +72,10 @@ export default function FoodChoice() {
   }
 
   return (
-    <div className="min-h-screen animated-bg flex items-center justify-center p-4">
-      <div className="max-w-md w-full bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 p-10 space-y-8">
+    <div className="min-h-screen animated-bg flex items-center justify-center p-6">
+      <div className="max-w-md w-full bg-white/95 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/30 p-12 space-y-10 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-200/20 to-yellow-200/20 rounded-full -translate-y-16 translate-x-16 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-28 h-28 bg-gradient-to-tr from-amber-200/20 to-orange-200/20 rounded-full translate-y-14 -translate-x-14 blur-2xl"></div>
         {/* Photo Section */}
         <div className="flex justify-center">
           <PhotoDisplay
@@ -84,11 +86,11 @@ export default function FoodChoice() {
         </div>
 
         {/* Question */}
-        <div className="text-center space-y-2">
-          <h1 className="text-2xl font-bold text-gray-800">
+        <div className="text-center space-y-4 relative z-10">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
             ¿Qué te gustaría comer? 🍽️
           </h1>
-          <p className="text-gray-600">
+          <p className="text-lg text-gray-700 font-medium bg-gradient-to-r from-orange-50/50 to-yellow-50/50 backdrop-blur-sm rounded-full px-6 py-3 border border-white/40">
             Elige tu comida favorita para nuestra cita
           </p>
         </div>
@@ -99,10 +101,10 @@ export default function FoodChoice() {
             <button
               key={food.id}
               onClick={() => handleFoodSelect(food.id)}
-              className={`w-full p-6 rounded-2xl border-2 transition-all duration-300 text-left transform hover:scale-[1.02] ${
+              className={`group relative w-full p-8 rounded-3xl border-2 transition-all duration-500 text-left transform hover:scale-[1.02] overflow-hidden ${
                 selectedFood === food.id
-                  ? 'border-orange-500 bg-gradient-to-r from-orange-50 to-yellow-50 shadow-lg ring-2 ring-orange-200'
-                  : 'border-gray-200 hover:border-orange-300 hover:bg-orange-25/50 hover:shadow-md'
+                  ? 'border-orange-500 bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 shadow-2xl ring-4 ring-orange-200/50'
+                  : 'border-gray-200/60 hover:border-orange-400 hover:bg-gradient-to-br hover:from-orange-25 hover:to-yellow-25 hover:shadow-xl bg-white/70 backdrop-blur-sm'
               }`}
             >
               <div className="flex items-center space-x-4">
@@ -126,9 +128,13 @@ export default function FoodChoice() {
         <button
           onClick={handleContinue}
           disabled={!selectedFood}
-          className="w-full bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-600 text-white py-4 px-8 rounded-2xl font-semibold text-lg hover:from-orange-600 hover:via-amber-600 hover:to-yellow-700 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-lg"
+          className="relative w-full bg-gradient-to-r from-orange-500 via-amber-500 to-yellow-600 text-white py-5 px-10 rounded-3xl font-bold text-xl hover:from-orange-600 hover:via-amber-600 hover:to-yellow-700 transform hover:scale-[1.02] active:scale-[0.99] transition-all duration-500 shadow-2xl hover:shadow-3xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-2xl overflow-hidden group"
         >
-          Continuar 🍽️
+          <span className="relative z-10 flex items-center justify-center gap-3">
+            Continuar
+            <span className="text-2xl group-hover:rotate-12 transition-transform duration-300">🍽️</span>
+          </span>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
         </button>
 
         {/* Memory Photos */}

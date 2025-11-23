@@ -26,8 +26,11 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen animated-bg flex items-center justify-center p-4">
-      <div className="max-w-md w-full bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl border border-white/20 p-10 space-y-8">
+    <div className="min-h-screen animated-bg flex items-center justify-center p-6">
+      <div className="max-w-md w-full bg-white/95 backdrop-blur-xl rounded-[2rem] shadow-2xl border border-white/30 p-12 space-y-10 relative overflow-hidden">
+        {/* Decorative elements */}
+        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-pink-200/20 to-purple-200/20 rounded-full -translate-y-16 translate-x-16 blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-indigo-200/20 to-blue-200/20 rounded-full translate-y-12 -translate-x-12 blur-2xl"></div>
         {/* Photo Section */}
         <div className="flex justify-center">
           <PhotoDisplay
@@ -38,45 +41,50 @@ export default function Home() {
         </div>
 
         {/* Welcome Text */}
-        <div className="text-center space-y-4">
-          <h1 className="text-3xl font-bold text-gray-800 tracking-tight">
+        <div className="text-center space-y-6 relative z-10">
+          <h1 className="text-4xl font-bold text-gray-900 tracking-tight bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent">
             Hola princesa  💕
           </h1>
 
           {/* Explanation */}
-          <div className="bg-gradient-to-br from-indigo-50/80 via-purple-50/80 to-pink-50/80 backdrop-blur-sm rounded-2xl p-6 max-w-sm mx-auto border border-white/30 shadow-sm">
+          <div className="bg-gradient-to-br from-indigo-50/90 via-purple-50/90 to-pink-50/90 backdrop-blur-md rounded-3xl p-8 max-w-sm mx-auto border border-white/40 shadow-lg hover:shadow-xl transition-all duration-500">
             <p className="text-sm text-gray-700 leading-relaxed font-medium">
               Esta página es especial, solo tú puedes acceder.
-              Para continuar, necesito que me recuerdes <strong>exactamente</strong> el día que nos conocimos...
+              Para continuar, necesito que me recuerdes <strong className="text-indigo-600">exactamente</strong> el día que nos conocimos...
             </p>
           </div>
 
           {/* Hint Button */}
           <button
             onClick={() => alert('💡 Pista: Fue en junio de 2025, y era un día muy especial... 😊')}
-            className="text-sm text-gray-500 hover:text-gray-700 underline decoration-dotted underline-offset-2 transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm text-indigo-600 hover:text-indigo-800 bg-indigo-50/50 hover:bg-indigo-100/50 rounded-full transition-all duration-300 backdrop-blur-sm border border-indigo-200/30 hover:border-indigo-300/50"
           >
-            ¿Necesitas una pista? ✨
+            <span className="text-lg">💡</span>
+            ¿Necesitas una pista?
+            <span className="text-lg">✨</span>
           </button>
 
-          <p className="text-gray-600 text-sm">
+          <p className="text-gray-600 text-sm font-medium bg-gray-50/50 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200/30">
             Selecciona la fecha en el calendario
           </p>
         </div>
 
         {/* Date Picker */}
-        <div className="space-y-4">
-          <label className="block text-sm font-medium text-gray-700 text-center">
+        <div className="space-y-5">
+          <label className="block text-lg font-semibold text-gray-800 text-center bg-gradient-to-r from-gray-800 to-gray-700 bg-clip-text text-transparent">
             ¿Cuándo nos conocimos? 📅
           </label>
           <div className="flex justify-center">
-            <DatePicker
-              selected={selectedDate}
-              onChange={(date) => setSelectedDate(date)}
-              dateFormat="dd/MM/yyyy"
-              className="w-full px-6 py-4 border border-gray-200 rounded-2xl focus:ring-4 focus:ring-indigo-200 focus:border-indigo-400 text-center text-lg bg-gray-50/50 backdrop-blur-sm transition-all duration-300 placeholder:text-gray-400"
-              placeholderText="Selecciona la fecha"
-            />
+            <div className="relative">
+              <DatePicker
+                selected={selectedDate}
+                onChange={(date) => setSelectedDate(date)}
+                dateFormat="dd/MM/yyyy"
+                className="w-full px-8 py-5 text-lg text-center bg-white/70 backdrop-blur-md border-2 border-gray-200/50 rounded-3xl focus:ring-4 focus:ring-indigo-300 focus:border-indigo-500 hover:border-gray-300 transition-all duration-300 placeholder:text-gray-400 shadow-lg hover:shadow-xl"
+                placeholderText="Selecciona la fecha"
+              />
+              <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-white/20 to-transparent pointer-events-none"></div>
+            </div>
           </div>
         </div>
 
@@ -84,29 +92,39 @@ export default function Home() {
         <button
           onClick={handleContinue}
           disabled={!selectedDate}
-          className="w-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-4 px-8 rounded-2xl font-semibold text-lg hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-lg"
+          className="relative w-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white py-5 px-10 rounded-3xl font-bold text-xl hover:from-indigo-700 hover:via-purple-700 hover:to-pink-700 transform hover:scale-[1.02] active:scale-[0.99] transition-all duration-500 shadow-2xl hover:shadow-3xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-2xl overflow-hidden group"
         >
-          Continuar ✨
+          <span className="relative z-10 flex items-center justify-center gap-3">
+            Continuar
+            <span className="text-2xl group-hover:rotate-12 transition-transform duration-300">✨</span>
+          </span>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000"></div>
         </button>
 
         {/* Memory Photos */}
-        <div className="flex justify-center space-x-2 pt-4">
-          <PhotoDisplay
-            src="/recuerdo-1.jpg"
-            alt="Foto recuerdo 1"
-            className="w-20 h-20 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-white/50"
-            width={80}
-            height={80}
-            fallbackText="Recuerdo especial"
-          />
-          <PhotoDisplay
-            src="/recuerdo-2.jpg"
-            alt="Foto recuerdo 2"
-            className="w-20 h-20 bg-gray-100 rounded-2xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-white/50"
-            width={80}
-            height={80}
-            fallbackText="Otro recuerdo"
-          />
+        <div className="flex justify-center space-x-4 pt-8">
+          <div className="group relative">
+            <PhotoDisplay
+              src="/recuerdo-1.jpg"
+              alt="Foto recuerdo 1"
+              className="w-24 h-24 bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl overflow-hidden flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-white/60 hover:border-white/80 transform hover:scale-110 hover:rotate-2"
+              width={96}
+              height={96}
+              fallbackText="Recuerdo especial"
+            />
+            <div className="absolute -inset-1 bg-gradient-to-r from-pink-400 to-purple-400 rounded-3xl opacity-0 group-hover:opacity-20 blur transition-opacity duration-500"></div>
+          </div>
+          <div className="group relative">
+            <PhotoDisplay
+              src="/recuerdo-2.jpg"
+              alt="Foto recuerdo 2"
+              className="w-24 h-24 bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl overflow-hidden flex items-center justify-center shadow-lg hover:shadow-2xl transition-all duration-500 border-2 border-white/60 hover:border-white/80 transform hover:scale-110 hover:-rotate-2"
+              width={96}
+              height={96}
+              fallbackText="Otro recuerdo"
+            />
+            <div className="absolute -inset-1 bg-gradient-to-r from-indigo-400 to-blue-400 rounded-3xl opacity-0 group-hover:opacity-20 blur transition-opacity duration-500"></div>
+          </div>
         </div>
       </div>
     </div>
