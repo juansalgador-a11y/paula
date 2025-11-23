@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Una Cita Especial 💕",
-  description: "Una aplicación especial para pedir una cita",
+  title: "Te quiero preguntar algo...",
+  description: "Te quiero preguntar algo especial",
 };
 
 export default function RootLayout({
