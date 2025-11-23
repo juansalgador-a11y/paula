@@ -116,9 +116,19 @@ Tres canciones embebidas de Spotify en la página final.
 ### Netlify (Recomendado)
 
 1. Conecta tu repositorio de GitHub a Netlify
-2. Las dependencias ya están configuradas correctamente (React 18 para compatibilidad)
-3. Agrega las variables de entorno de Supabase en Build Settings
+2. **Configuración automática**: El archivo `netlify.toml` ya está configurado
+3. Agrega las variables de entorno de Supabase en Build Settings:
+   ```
+   NEXT_PUBLIC_SUPABASE_URL=https://dwrelwshzrdhqzkqzoek.supabase.co
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR3cmVsd3NoenJkaHF6a3F6b2VrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM5MTY4MzIsImV4cCI6MjA3OTQ5MjgzMn0.4u6Qkw925g-ns9QuWvUKTlxGz9p0AltYEj_CIAtjA-0
+   ```
 4. Despliega automáticamente
+
+**Características del despliegue:**
+- ✅ Exportación estática configurada
+- ✅ SPA routing con redirects automáticos
+- ✅ Todas las rutas funcionan correctamente
+- ✅ Build optimizado para producción
 
 ### Vercel (Alternativa)
 
