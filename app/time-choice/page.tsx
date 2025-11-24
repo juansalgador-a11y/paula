@@ -68,7 +68,7 @@ export default function TimeChoice() {
           <PhotoDisplay
             src="/tu-foto.jpeg"
             alt="Tu foto principal"
-            fallbackText="Tu foto aquí 💕"
+            fallbackText="Tu foto aquí"
           />
         </div>
 
@@ -116,7 +116,7 @@ export default function TimeChoice() {
           disabled={!selectedTime}
           className="w-full bg-white text-gray-800 py-3 px-6 rounded-2xl font-semibold text-lg border-2 border-gray-200 hover:border-blue-400 hover:bg-blue-50 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-lg"
         >
-          Continuar ⏰
+          Continuar
         </button>
 
         {/* Memory Photos */}
@@ -127,7 +127,7 @@ export default function TimeChoice() {
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
             height={64}
-            fallbackText="Una cita perfecta"
+            fallbackText="Cita"
           />
           <PhotoDisplay
             src="/nosotros2.jpeg"
@@ -135,7 +135,7 @@ export default function TimeChoice() {
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
             height={64}
-            fallbackText="Momento especial"
+            fallbackText="Momento"
           />
         </div>
       </div>

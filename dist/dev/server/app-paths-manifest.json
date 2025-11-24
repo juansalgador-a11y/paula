@@ -1,0 +1,8 @@
+{
+  "/confirmation/page": "app/confirmation/page.js",
+  "/date-question/page": "app/date-question/page.js",
+  "/food-choice/page": "app/food-choice/page.js",
+  "/memories/page": "app/memories/page.js",
+  "/page": "app/page.js",
+  "/time-choice/page": "app/time-choice/page.js"
+}

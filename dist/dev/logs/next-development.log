@@ -1,0 +1,13 @@
+[00:00:11.069] Server  LOG      ✓ Ready in 11s
+[00:00:17.446] Server  LOG      ○ Compiling / ...
+[00:00:52.028] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:52.150] Browser WARN    Image with src "/tu-foto.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:01:13.515] Server  LOG      ✓ Compiled in 59ms
+[00:03:09.472] Server  LOG      ✓ Compiled in 37ms
+[00:03:29.141] Server  LOG      ✓ Compiled in 46ms
+[00:04:21.975] Server  LOG      ✓ Compiled in 45ms
+[00:04:30.647] Server  LOG      ✓ Compiled in 30ms
+[00:07:02.741] Server  LOG      ✓ Compiled in 46ms
+[00:07:18.796] Server  LOG      ✓ Compiled in 39ms
+[00:07:48.175] Server  LOG      ✓ Compiled in 31ms

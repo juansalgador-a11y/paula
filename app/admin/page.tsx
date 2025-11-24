@@ -106,7 +106,7 @@ export default function AdminDashboard() {
             📊 Dashboard de Respuestas
           </h1>
           <p className="text-gray-600">
-            Todas las respuestas de tu cita especial
+            Todas las respuestas recibidas
           </p>
         </div>
 

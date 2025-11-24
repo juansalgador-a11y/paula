@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Te quiero preguntar algo...",
-  description: "Te quiero preguntar algo especial",
+  title: "Una invitación especial",
+  description: "Una invitación para algo especial",
 };
 
 export default function RootLayout({

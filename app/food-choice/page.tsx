@@ -81,7 +81,7 @@ export default function FoodChoice() {
           <PhotoDisplay
             src="/tu-foto.jpeg"
             alt="Tu foto principal"
-            fallbackText="Tu foto aquí 💕"
+            fallbackText="Tu foto aquí"
           />
         </div>
 
@@ -91,7 +91,7 @@ export default function FoodChoice() {
             ¿Qué te gustaría comer? 🍽️
           </h1>
           <p className="text-lg text-gray-700 font-medium bg-white/50 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200/30">
-            Elige tu comida favorita para nuestra cita
+            Elige tu comida favorita
           </p>
         </div>
 
@@ -130,7 +130,7 @@ export default function FoodChoice() {
           disabled={!selectedFood}
           className="w-full bg-white text-gray-800 py-3 px-6 rounded-2xl font-semibold text-lg border-2 border-gray-200 hover:border-orange-400 hover:bg-orange-50 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-lg"
         >
-          Continuar 🍽️
+          Continuar
         </button>
 
         {/* Memory Photos */}
@@ -141,7 +141,7 @@ export default function FoodChoice() {
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
             height={64}
-            fallbackText="Comida deliciosa"
+            fallbackText="Comida"
           />
           <PhotoDisplay
             src="/nosotros2.jpeg"
@@ -149,7 +149,7 @@ export default function FoodChoice() {
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
             height={64}
-            fallbackText="Nosotros juntos"
+            fallbackText="Foto juntos"
           />
         </div>
       </div>

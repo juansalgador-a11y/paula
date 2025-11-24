@@ -56,18 +56,18 @@ export default function DateQuestion() {
           </div>
 
           <h1 className="text-2xl font-bold text-gray-800">
-            Bueno... 💔
+            Huebiera querido ser mejor cuando tenia la oportunidad
           </h1>
 
           <p className="text-gray-600">
-            Yo no me rindo tan fácilmente y peor por ti.
+            Suerte en todo pequeña 
           </p>
 
           <button
             onClick={handleBackToYes}
             className="w-full bg-white text-gray-800 py-3 px-6 rounded-2xl font-semibold text-lg border-2 border-gray-200 hover:border-blue-400 hover:bg-blue-50 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            ¿Cambiaste de opinión? 😊
+            ¿Cambiaste de opinión?
           </button>
 
           {/* Memory Photo */}
@@ -91,14 +91,14 @@ export default function DateQuestion() {
           <PhotoDisplay
             src="/tu-foto.jpeg"
             alt="Tu foto principal"
-            fallbackText="Tu foto aquí 💕"
+            fallbackText="Tu foto aquí"
           />
         </div>
 
         {/* Question */}
         <div className="text-center space-y-6 relative z-10">
           <h1 className="text-4xl font-bold text-gray-900">
-            ¿Quieres salir conmigo? 💕
+            ¿Quieres salir conmigo?
           </h1>
           <div className="space-y-3">
             <p className="text-lg text-gray-700 font-medium bg-white/50 backdrop-blur-sm rounded-full px-6 py-3 border border-gray-200/30">
@@ -116,14 +116,14 @@ export default function DateQuestion() {
             onClick={handleYes}
             className="w-full bg-white text-gray-800 py-4 px-6 rounded-2xl font-semibold text-lg border-2 border-gray-200 hover:border-green-400 hover:bg-green-50 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            ¡Sí! 😍
+            Sí
           </button>
 
           <button
             onClick={handleNo}
             className="w-full bg-white text-gray-800 py-4 px-6 rounded-2xl font-semibold text-lg border-2 border-gray-200 hover:border-red-400 hover:bg-red-50 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl"
           >
-            No, gracias 🙁
+            No
           </button>
         </div>
 
@@ -135,7 +135,7 @@ export default function DateQuestion() {
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
             height={64}
-            fallbackText="Recuerdo feliz"
+            fallbackText="Recuerdo"
           />
           <PhotoDisplay
             src="/nosotros2.jpeg"
@@ -143,7 +143,7 @@ export default function DateQuestion() {
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
             height={64}
-            fallbackText="Nosotros juntos"
+            fallbackText="Foto juntos"
           />
         </div>
       </div>

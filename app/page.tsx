@@ -20,7 +20,7 @@ export default function Home() {
         localStorage.setItem('meetingDate', selectedDateString)
         router.push('/memories')
       } else {
-        alert('💝 Fecha incorrecta. Recuerda cuando nos conocimos... intenta de nuevo 💕')
+        alert('Fecha incorrecta. Intenta de nuevo')
       }
     }
   }
@@ -36,31 +36,29 @@ export default function Home() {
           <PhotoDisplay
             src="/tu-foto.jpeg"
             alt="Tu foto principal"
-            fallbackText="Tu foto aquí 💕"
+            fallbackText="Tu foto aquí"
           />
         </div>
 
         {/* Welcome Text */}
         <div className="text-center space-y-6">
           <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
-            Hola princesa  💕
+            Hola Princesa
           </h1>
 
           {/* Hint Button */}
           <button
-            onClick={() => alert('💡 Pista: Fue en junio de 2025, y era un día muy especial... 😊')}
+            onClick={() => alert('Pista: Fue en junio de 2025')}
             className="inline-flex items-center gap-2 px-4 py-2 text-sm text-gray-700 hover:text-gray-900 bg-white/70 hover:bg-gray-50/70 rounded-full transition-all duration-300 backdrop-blur-sm border border-gray-200/50 hover:border-gray-300/50"
           >
             <span className="text-lg">💡</span>
             ¿Necesitas una pista?
-            <span className="text-lg">✨</span>
           </button>
 
           {/* Explanation */}
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 max-w-sm mx-auto border border-gray-200/50 shadow-sm">
             <p className="text-sm text-gray-700 leading-relaxed font-medium">
-              Esta página es especial, solo tú puedes acceder.
-              Para continuar, necesito que me recuerdes <strong className="text-gray-900">exactamente</strong> el día que nos conocimos...
+              Para continuar, necesito que recuerdes exactamente el día que nos conocimos.
             </p>
           </div>
         </div>
@@ -77,7 +75,7 @@ export default function Home() {
               onChange={(date) => setSelectedDate(date)}
               dateFormat="dd/MM/yyyy"
               className="relative z-10 w-full px-6 py-4 text-lg text-center bg-white/70 backdrop-blur-md border-2 border-gray-200/50 rounded-2xl focus:ring-4 focus:ring-gray-300 focus:border-gray-400 hover:border-gray-300 transition-all duration-300 placeholder:text-gray-400 shadow-lg hover:shadow-xl"
-              placeholderText="Selecciona la fecha"
+              placeholderText="Elige la fecha"
               popperClassName="z-[10000]"
               calendarClassName="z-[10000] rounded-2xl bg-white/95 backdrop-blur-sm border border-gray-200/50 shadow-2xl"
             />
@@ -92,7 +90,7 @@ export default function Home() {
           disabled={!selectedDate}
           className="w-full bg-white text-gray-800 py-3 px-6 rounded-2xl font-semibold text-lg border-2 border-gray-200 hover:border-gray-300 hover:bg-gray-50 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-lg"
         >
-          Continuar ✨
+          Continuar
         </button>
       </div>
     </div>

@@ -66,7 +66,7 @@ export default function Confirmation() {
     await saveToSupabase()
   }
 
-  const getFoodEmoji = (choice: string | null) => {
+  const getFoodEmoji = (choice: string | null): string => {
     switch (choice) {
       case 'sushi': return '🍱 Sushi'
       case 'pizza': return '🍕 Pizza'
@@ -85,19 +85,19 @@ export default function Confirmation() {
           <PhotoDisplay
             src="/tu-foto.jpeg"
             alt="Foto feliz"
-            fallbackText="Tu sonrisa 💕"
+            fallbackText="Tu foto"
           />
         </div>
 
         {/* Success Message */}
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold text-gray-900 tracking-tight">
-            Todo listo para el sábado 💕
+            Una invitación especial para una persona especial
           </h1>
 
           {/* Summary */}
           <div className="bg-white/70 backdrop-blur-sm rounded-2xl p-6 space-y-4 shadow-lg border border-gray-200/50 relative z-10">
-            <h2 className="font-bold text-gray-800 text-xl">Resumen de nuestra cita:</h2>
+            <h2 className="font-bold text-gray-800 text-xl">Resumen:</h2>
             <div className="space-y-3">
               <div className="flex items-center gap-3 bg-gray-50/50 backdrop-blur-sm rounded-xl p-4 border border-gray-200/30">
                 <span className="text-xl">📅</span>
@@ -134,10 +134,10 @@ export default function Confirmation() {
           <div className="space-y-6">
             <div className="text-center">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                🎵 Canciones que me recuerdan a ti:
+                🎵 Canciones que me recuerdan a ti: 
               </h3>
               <p className="text-gray-600 text-sm">
-                Mientras tanto, disfruta esta playlist especial...
+                Disfruta esta playlist...
               </p>
             </div>
 
@@ -198,13 +198,13 @@ export default function Confirmation() {
             disabled={isSaving}
             className="w-full bg-white text-gray-800 py-4 px-8 rounded-2xl font-bold text-xl border-2 border-gray-200 hover:border-purple-400 hover:bg-purple-50 transform hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:shadow-lg"
           >
-            {isSaving ? '💾 Guardando...' : '✨ Finalizar 💕'}
+            {isSaving ? 'Guardando...' : 'Finalizar'}
           </button>
 
           {/* Final Message */}
           <div className="bg-gradient-to-br from-pink-100/80 via-purple-100/80 to-indigo-100/80 backdrop-blur-sm rounded-2xl p-8 shadow-sm border border-white/30">
             <p className="text-xl font-semibold text-gray-800 text-center leading-relaxed">
-              Todo listo para el sábado 😉<br/>
+              Todo listo para el sábado.<br/>
               Te contactaré brevemente.
             </p>
           </div>
@@ -213,13 +213,13 @@ export default function Confirmation() {
         {/* Status Message */}
         {isSaving && (
           <div className="text-center text-sm text-gray-600">
-            Guardando tus preferencias... 💾
+            Guardando tus preferencias...
           </div>
         )}
 
         {isSaved && (
           <div className="text-center text-sm text-green-600">
-            ¡Preferencias guardadas! ✨
+            ¡Preferencias guardadas!
           </div>
         )}
 
@@ -231,7 +231,7 @@ export default function Confirmation() {
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
             height={64}
-            fallbackText="Sonrisa hermosa"
+            fallbackText="Foto"
           />
           <PhotoDisplay
             src="/nosotros1.jpeg"
@@ -239,7 +239,7 @@ export default function Confirmation() {
             className="w-16 h-16 bg-gray-100 rounded-xl overflow-hidden flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"
             width={64}
             height={64}
-            fallbackText="Momento especial"
+            fallbackText="Momento"
           />
           <PhotoDisplay
             src="/nosotros2.jpeg"
